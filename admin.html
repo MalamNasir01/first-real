@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journalist Attack Reports Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Journalist Attack Reports</h1>
+        
+        <div class="filter-section">
+            <select id="state-filter">
+                <option value="">All States</option>
+                <option value="Gombe">Gombe</option>
+                <option value="Bauchi">Bauchi</option>
+                <option value="Borno">Borno</option>
+                <option value="Yobe">Yobe</option>
+                <option value="Adamawa">Adamawa</option>
+                <option value="Taraba">Taraba</option>
+                <option value="Abuja">Abuja</option>
+                <option value="Sokoto">Sokoto</option>
+            </select>
+            
+            <select id="attack-type-filter">
+                <option value="">All Attack Types</option>
+                <option value="unlawful-arrest">Unlawful Arrest</option>
+                <option value="physical-attack">Physical Attack</option>
+                <option value="murder">Murder</option>
+                <option value="threat">Threat</option>
+                <option value="harassment">Harassment</option>
+                <option value="cyberbullying">Cyberbullying</option>
+            </select>
+        </div>
+
+        <table id="reports-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Victim Name</th>
+                    <th>State</th>
+                    <th>Attack Type</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="reports-body">
+                <!-- Reports will be dynamically populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="report-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="report-details">
+                <div class="report-images" id="report-images"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
