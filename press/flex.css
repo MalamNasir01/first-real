@@ -3,7 +3,7 @@
     margin: 0px;
 }
 .head {
-    background-image: url(slide_0.jpg);
+    background-image: url(Images/slide_0.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -211,7 +211,7 @@
 }
 /* ayari */
 .imagereport{
-    background-image: url(psj-bg.webp);
+    background-image: url(Images/psj-bg.webp);
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -243,7 +243,7 @@
 }
 /* maryam */
 .daga{
-    background-image: url(ra-bg.webp);
+    background-image: url(Images/ra-bg.webp);
     background-position: center;
     background-repeat: no-repeat;
     width: 80%;
